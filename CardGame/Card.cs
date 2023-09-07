@@ -14,8 +14,8 @@ namespace CardGame
         
         public Card(int val, int suit)
         {
-            this.val = val;
             this.suit = suit;
+            this.val = val;
         }
         public int getVal() { return val; } 
         public int getSuit() {  return suit; }
@@ -26,7 +26,7 @@ namespace CardGame
             switch (val)
             {
                  
-                case 1: result = "Ace"; 
+                case 1: result = "A"; 
                     break;
                 case 2:
                 case 3:
@@ -36,29 +36,29 @@ namespace CardGame
                 case 7:
                 case 8:
                 case 9:
-                case 10:result += $"{val}";
+                case 10:result += val + " ";
                     break;
-                case 11:result += "J";
+                case 11:result += "J ";
                 break;
-                case 12:result += "Q";
+                case 12:result += "Q ";
                     break;
-                    case 13:result += "K";
+                    case 13:result += "K ";
                     break;
                 default: result = "error";
                     break;
             }
             switch (suit)
             {
-                case 1:
+                case 3:
                     result +="♥";
                     break;
-                case 2:
+                case 1:
                     result += "♣";
                 break;
-                case 3:
+                case 4:
                     result += "♠";
                     break;  
-                case 4: result += "♦";
+                case 2: result += "♦";
                     break;
                     default: result += ""; 
                     break;  

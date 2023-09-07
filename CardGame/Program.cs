@@ -12,7 +12,11 @@
             Console.WriteLine(c1);
             Console.WriteLine(c3);
             Console.WriteLine(c4);
-            
+            string name = Console.ReadLine();
+            if (name == null)
+            name = Console.ReadLine();
+            Player player = new Player(name);
+
         }
     }
 }
